@@ -1,0 +1,201 @@
+.movie {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie__intro {
+    width: 80%;
+}
+
+.movie__backdrop {
+    width: 100vw;                     /* Ensures the backdrop takes up the full width of the viewport */
+    height: 500px;
+    object-fit: cover;
+    object-position: 0 35%;
+    border-bottom-left-radius: 25px;  /* Curves the bottom left edge */
+    border-bottom-right-radius: 25px; /* Curves the bottom right edge */
+    margin-left: calc(-50vw + 50%);   /* Centers the image and ensures it touches the edges of the screen */
+}
+
+.movie__detail {
+    align-items: center;
+    width: 75%;
+    display: flex;
+    position: relative;
+    bottom: 225px;
+}
+
+.movie__detailLeft {
+    margin-right: 30px;
+}
+
+.movie__poster {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+
+.movie__detailRight {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: space-between;
+}
+
+.movie__rating .fa-star {
+    color: rgb(255, 217, 0); /* Change the star color to yellow */
+}
+
+.movie__detailRightTop > div {
+    text-shadow: 0px 0px 5px #000000;
+    margin-bottom: .5rem;
+}
+
+.movie__name {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.movie__voteCount {
+    margin-left: 1rem;
+}
+
+.movie__genres {
+    margin: 1.25rem 0;
+}
+
+.movie__genre {
+    padding: .5rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+.movie__detailRightBottom {
+    margin: 2rem 0;
+    flex: 0.8;
+}
+
+.synopsisText {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.synopsisText > div:last-of-type {
+    margin-left: auto;
+}
+
+.movie__platforms {
+    margin-top: 20px; /* Space above the platforms section */
+}
+
+.platforms__heading {
+    font-size: 18px; /* Font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.platforms__list {
+    display: flex; /* Flexbox layout for the platforms */
+    flex-wrap: wrap; /* Allow wrapping of logos */
+    gap: 10px; /* Space between logos */
+}
+
+.platforms__region {
+    margin-right: 20px; /* Space between different regions */
+}
+
+.platform__item {
+    display: inline-block; /* Inline-block for logos */
+}
+
+.platform__logo {
+    width: 50px; /* Set a fixed width for logos */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.ratingSection {
+    margin-top: 20px; /* Space above the rating section */
+    text-align: center; /* Center the text in the rating section */
+}
+
+.ratingSection h3 {
+    margin-bottom: 10px; /* Space between the title and the emojis */
+}
+
+.emojiRating {
+    display: flex;
+    justify-content: center; /* Center the emojis horizontally */
+    align-items: center; /* Center the emojis vertically */
+    margin-top: 10px; /* Space above the emoji rating section */
+}
+
+.emoji {
+    width: 50px; /* Size of the emoji */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 5px; /* Space between emojis */
+    cursor: pointer;
+    transition: opacity 0.2s ease; /* Smooth opacity transition */
+}
+
+.selected {
+    opacity: 1; /* Fully visible when selected */
+}
+
+.watchButtons {
+    margin-top: 20px; /* Space above buttons */
+    display: flex;
+    justify-content: space-between;
+}
+
+.watchButtons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.watchButtons button.active {
+    background-color: #007bff; /* Active button color */
+    color: white;
+}
+
+.reviewSection {
+    margin-top: 30px; /* Space above review section */
+}
+
+.reviewSection form {
+    margin-bottom: 20px; /* Space below form */
+}
+
+.reviewSection textarea {
+    width: 100%; /* Full width of the parent */
+    margin-bottom: 10px; /* Space below the textarea */
+}
+
+.reviewList {
+    border-top: 1px solid #ccc; /* Divider above reviews */
+    padding-top: 10px; /* Space above reviews */
+}
+
+.reviewItem {
+    margin-bottom: 15px; /* Space between reviews */
+    padding: 10px;
+    border: 1px solid #ddd; /* Border around each review */
+    border-radius: 5px;
+}
+
+.reviewActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
